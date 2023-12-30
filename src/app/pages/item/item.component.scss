@@ -1,0 +1,32 @@
+.m-item:hover{
+    cursor: pointer;
+    box-shadow: none;
+    border: 2px solid greenyellow;
+    opacity: 1;
+}
+.m-item{
+    display: inline-block;
+    opacity: 1;
+    height: 9vh;
+    width: 3.6vw;
+    margin-top: 2vh;
+    padding-top: 95%;
+}
+.nope:hover{
+    cursor: pointer;
+    box-shadow: none;
+    border: 2px solid red;
+    background: 
+    linear-gradient(to top left,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) calc(50% - 0.8px),
+        rgb(255, 0, 0) 50%,
+        rgba(0,0,0,0) calc(50% + 0.8px),
+        rgba(0,0,0,0) 100%),
+    linear-gradient(to top right,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) calc(50% - 0.8px),
+        rgb(255, 0, 0) 50%,
+        rgba(0,0,0,0) calc(50% + 0.8px),
+        rgba(0,0,0,0) 100%);
+}
