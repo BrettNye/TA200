@@ -1,47 +1,46 @@
-<app-screen
-    [imageName]="'rando.png'">
-    <div class="d-flex justify-content-around">
-        <app-item
-        [child]="'test'"
-        [parent]="'users/manage'"
-        [class]="'m-item'"
-        ></app-item>
-        <app-item
-        [child]="'test'"
-        [parent]="'users/manage'"
-        [class]="'m-item'"
-        ></app-item>
-        <app-item
-        [child]="'test'"
-        [parent]="'users/manage'"
-        [class]="'m-item'"
-        ></app-item>
-        <app-item
-        [child]="'test'"
-        [parent]="'users/manage'"
-        [class]="'m-item'"
-        ></app-item>
-      </div>
-      <div class="d-flex justify-content-around">
-        <app-item
-        [child]="'test'"
-        [parent]="'users/manage'"
-        [class]="'m-item nope'"
-        ></app-item>
-        <app-item
-        [child]="'test'"
-        [parent]="'users/manage'"
-        [class]="'m-item nope'"
-        ></app-item>
-        <app-item
-        [child]="'test'"
-        [parent]="'users/manage'"
-        [class]="'m-item nope'"
-        ></app-item>
-        <app-item
-        [child]="'test'"
-        [parent]="'users/manage'"
-        [class]="'m-item nope'"
-        ></app-item>
-      </div>
+<app-screen>
+  <div style="background-color: lightgrey; height: 10%;">
+    <div class="d-inline-block" style=" color: White; margin-right: 1%; width: 30%; background-color: cornflowerblue; font-size: medium; padding-top: .25%;">ID. NO</div>
+    <div class="d-inline-block" style="color: White; margin-right: 1%; width: 25%; background-color: cornflowerblue; font-size: medium; padding-top: .25%;">Name</div>
+    <div class="d-inline-block" style="color: White; margin-right: 1%; width: 10%; background-color: cornflowerblue; font-size: medium; padding-top: .25%;">FP</div>
+    <div class="d-inline-block" style="color: White; margin-right: 1%; width: 12.5%; background-color: cornflowerblue; font-size: medium; padding-top: .25%;">PWD</div>
+    <div class="d-inline-block" style="color: White; margin-left: 1%; width: 12.5%; background-color: cornflowerblue; font-size: medium; padding-top: .25%;">Card</div>
+  </div>
+  <div style="background-color: lightgrey; height: 80%;">
+    <div class="user" (click)="userClicked('1234')">
+      <div class="d-inline-block" style="margin-right: 1%; font-size: small; width: 30%;">1234</div>
+      <div class="d-inline-block" style="margin-right: 1%; font-size: small; width: 25%">Andy</div>
+      <div class="d-inline-block" style="margin-right: 1%; font-size: small; width: 10%">1</div>
+      <div class="d-inline-block" style="margin-right: 1%; font-size: small; width: 12.5%"></div>
+      <div class="d-inline-block" style="margin-left: 1%;font-size: small; width: 12.5%"></div>
+    </div>
+    <div class="user" (click)="userClicked('1888')">
+      <div class="d-inline-block" style="margin-right: 1%; font-size: small; width: 30%;">1888</div>
+      <div class="d-inline-block" style="margin-right: 1%; font-size: small; width: 25%">Kate</div>
+      <div class="d-inline-block" style="margin-right: 1%; font-size: small; width: 10%">0</div>
+      <div class="d-inline-block" style="margin-right: 1%; font-size: small; width: 12.5%">*KEY*</div>
+      <div class="d-inline-block" style="margin-left: 1%;font-size: small; width: 12.5%"></div>
+    </div>
+    <div class="user" (click)="userClicked('1555')" >
+      <div class="d-inline-block" style="margin-right: 1%; font-size: small; width: 30%;">1555</div>
+      <div class="d-inline-block" style="margin-right: 1%; font-size: small; width: 25%">Bob</div>
+      <div class="d-inline-block" style="margin-right: 1%; font-size: small; width: 10%">1</div>
+      <div class="d-inline-block" style="margin-right: 1%; font-size: small; width: 12.5%"></div>
+      <div class="d-inline-block" style="margin-left: 1%;font-size: small; width: 12.5%"></div>
+    </div>
+  </div>
+  <div style="background-color: cornflowerblue; height: 10%;">
+    <div class="d-inline-block" style="margin-right: 1%; width: 23%; font-size: small; padding-top: .25%;">PageUp: <span style="font-size: medium; font-weight: bold;"> * </span></div>
+    <div class="d-inline-block" style="margin-right: 1%; width: 26%; font-size: small; padding-top: .25%;">PageDown: <span style="font-size: medium; font-weight: bold;"> # </span></div>
+    <div class="d-inline-block" style="margin-right: 1%; width: 23%; font-size: small; padding-top: .25%;">Edits: <span style="font-size: medium; font-weight: bold;"> OK </span></div>
+    <div class="d-inline-block" style="margin-right: 1%; width: 23%; font-size: small; padding-top: .25%;">Func: <span style="font-size: medium; font-weight: bold;"> M/ </span></div>
+  </div>
+  <div style="position: absolute; margin-left: 2%; margin-top: 2%; width: 50%; height: 95%; background-color: lightgrey; top: 0%;" class="text-center ps-2 border border-black" id="usermenu" *ngIf="Visible">
+    <div class=" text-start userSelection" style="font-size: x-large;"> Search User </div>
+    <div class=" text-start userSelection" style="font-size: x-large;"> Record </div>
+    <div class=" text-start userSelection" style="font-size: x-large;" (click)="editUser('{{UserId}}')"> Edit </div>
+    <div class=" text-start userSelection" style="font-size: x-large;"> Del User </div>
+    <div class=" text-start userSelection" style="font-size: x-large;"> New User </div>
+    <div class="text-start userSelection" style="font-size: x-large;"> User Access </div>
+  </div>
 </app-screen>
