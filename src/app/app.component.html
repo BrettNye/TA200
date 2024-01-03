@@ -14,12 +14,13 @@
         
       </head>
 <body>
-  <div style="position: relative; width: 100%; text-align: center; ">
+  <div style="position: relative; width: 100%; text-align: center; background-color: brown;">
     <img src="../assets/images/ta200p.png" style=" width: 50%; "> 
     <div style="position: absolute; width: 16%; height: 45%; top: 15%; left: 57%;" class="finger">
       <div class="scanner" style="position: absolute; width: 25%; height: 25%; top: 25%; left: 35%;" (click)="Scanner()"></div>
       </div>
+      <router-outlet></router-outlet>
   </div>
-  <router-outlet></router-outlet>
+  
 </body>
 </html>
