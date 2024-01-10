@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
+
   constructor(
     private _router: Router
   ){}

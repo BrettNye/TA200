@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit{
   title = 'TA200';
+  height = visualViewport?.height;
+  width = visualViewport?.width;
 
   constructor(
     private _router: Router
