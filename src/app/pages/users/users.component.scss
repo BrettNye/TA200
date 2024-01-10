@@ -2,16 +2,12 @@
     cursor: pointer;
     box-shadow: none;
     border: 2px solid greenyellow;
-    opacity: 1;
-    height: 50px;
 }
 .m-item{
     display: inline-block;
     opacity: 1;
-    height: 2.75vh;
-    width: 3.6vw;
-    margin-top: .5vh;
-    padding-top: 95%;
+    height: 112.5px;
+    width: 78.75px;
 }
 .nope:hover{
     cursor: pointer;
@@ -30,4 +26,18 @@
         rgb(255, 0, 0) 50%,
         rgba(0,0,0,0) calc(50% + 0.8px),
         rgba(0,0,0,0) 100%);
+}
+.selectiongrid{
+    position: absolute; 
+    top: 28%; 
+    left: 35.5%; 
+    width: 315px; 
+    height: 235px; 
+    text-align: center; 
+    font-size: 10px; 
+}
+@media only screen and (max-width: 1250px){
+    .selectiongrid{
+        left: 24.25%;
+    }
 }
