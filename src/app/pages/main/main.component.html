@@ -1,5 +1,5 @@
-      <div class="selectiongrid">
-      <div class="h-100">
+      <!-- <div class="selectiongrid">
+      <div class="">
 
         <div class="d-flex">
           <div class="">
@@ -38,5 +38,41 @@
           </div>
         </div>
       </div>
+      </div> -->
+      <app-screen
+[imageName]="'main.JPG'"
+    >
+    <div class="d-flex">
+        <app-item
+        [child]="'users'"
+        [parent]="''"
+        [class]="'m-item'"
+        ></app-item>
+        <app-item
+        [child]="'comm'"
+        [parent]="''"
+        [class]="'m-item'"
+        ></app-item>
+        <app-item
+        [class]="'m-item nope'"
+        ></app-item>
+        <app-item
+        [class]="'m-item nope'"
+        ></app-item>
       </div>
+      <div class="d-flex">
+        <app-item
+        [class]="'m-item nope'"
+        ></app-item>
+        <app-item
+        [class]="'m-item nope'"
+        ></app-item>
+        <app-item
+        [class]="'m-item nope'"
+        ></app-item>
+        <app-item
+        [class]="'m-item nope'"
+        ></app-item>
+      </div>
+</app-screen>
 

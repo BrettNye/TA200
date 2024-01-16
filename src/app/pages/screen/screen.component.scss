@@ -4,8 +4,8 @@
 }
 .selectiongrid{
     position: absolute;
-    top: 28%;
-    left: 33%;
+    top: 29%;
+    left: 22.25%;
     width: 300px;
     height: 235px;
     text-align: center;
@@ -15,15 +15,15 @@
     position: absolute;
     top: 63%;
     left: 48.75%;
-    width: 4%;
+    width: 7%;
     height: 4%;
     border: 1px solid yellowgreen;
 }
-@media only screen and (max-width: 1250px){
-    .selectiongrid{
-        left: 24.25%;
-    }
-    .yellow{
-        width: 6%;
-    }
-}
+// @media only screen and (max-width: 1250px){
+//     .selectiongrid{
+//         left: 24.25%;
+//     }
+//     .yellow{
+//         width: 6%;
+//     }
+// }
