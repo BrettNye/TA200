@@ -9,8 +9,10 @@ import { ManageComponent } from './pages/users/manage/manage.component';
 import { ScreenComponent } from './pages/screen/screen.component';
 import { ItemComponent } from './pages/item/item.component';
 import { EditUserComponent } from './pages/users/manage/edit-user/edit-user.component';
+import { CommComponent } from './pages/comm/comm.component';
 const routes:Routes = [
   {path: 'users', component: UsersComponent},
+  {path: 'comm', component: CommComponent},
   {path: 'main', component: MainComponent},
   {path: 'users/manage', component: ManageComponent},
   {path: 'users/manage/edit', component: EditUserComponent}
@@ -24,7 +26,8 @@ const routes:Routes = [
     ManageComponent,
     ScreenComponent,
     ItemComponent,
-    EditUserComponent
+    EditUserComponent,
+    CommComponent
   ],
   imports: [
     BrowserModule,
