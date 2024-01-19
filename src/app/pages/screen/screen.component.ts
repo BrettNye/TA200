@@ -14,4 +14,7 @@ export class ScreenComponent implements OnInit{
       this.imageName = "./assets/images/" + this.imageName;
     }
   }
+  Scanner(){
+    alert("Scanner Click Test");
+  }
 }

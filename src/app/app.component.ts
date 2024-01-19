@@ -17,7 +17,5 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     this._router.navigate(['/main']);
   }
-  Scanner(){
-    alert("Scanner Click Test");
-  }
+
 }

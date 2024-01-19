@@ -10,10 +10,12 @@ import { ScreenComponent } from './pages/screen/screen.component';
 import { ItemComponent } from './pages/item/item.component';
 import { EditUserComponent } from './pages/users/manage/edit-user/edit-user.component';
 import { CommComponent } from './pages/comm/comm.component';
+import { FTWebsterComponent } from './pages/ftwebster/ftwebster.component';
 const routes:Routes = [
   {path: 'users', component: UsersComponent},
   {path: 'comm', component: CommComponent},
   {path: 'main', component: MainComponent},
+  {path: 'ftwebster', component: FTWebsterComponent},
   {path: 'users/manage', component: ManageComponent},
   {path: 'users/manage/edit', component: EditUserComponent}
 ]
@@ -27,11 +29,12 @@ const routes:Routes = [
     ScreenComponent,
     ItemComponent,
     EditUserComponent,
-    CommComponent
+    CommComponent,
+    FTWebsterComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forChild(routes),
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -16,16 +16,11 @@
 .yellow{
     position: absolute;
     top: 63%;
-    left: 48.75%;
-    width: 7%;
+    left: 47.5%;
+    width: 8%;
     height: 4%;
     border: 1px solid yellowgreen;
 }
-// @media only screen and (max-width: 1250px){
-//     .selectiongrid{
-//         left: 24.25%;
-//     }
-//     .yellow{
-//         width: 6%;
-//     }
-// }
+.finger:hover{
+    cursor: URL('../../../assets/images/fingertip.png'), auto;
+}
