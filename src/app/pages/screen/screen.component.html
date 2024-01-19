@@ -1,10 +1,12 @@
-<img src="../assets/images/ta200p.png" style="width: 100%;"> 
-<div style="position: absolute; width: 100px; height: 175px; top: 20%; left: 75%;" class="finger">
-    <div class="scanner" style="position: absolute; width: 50px; height: 25%; top: 25%; left: 35%;" (click)="Scanner()"></div>
+<div class="position-relative vw-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="position-relative">
+        <div style="position: absolute; width: 100px; height: 175px; top: 20%; left: 75%;" class="finger">
+            <div class="scanner" style="position: absolute; width: 75px; height: 87px; top: 55px; left: 0px;" (click)="Scanner()"></div>
+        </div>
+        <img src="../../../assets/images/ta200p.png"> 
+        <div class="position-absolute d-flex" style="border-radius:5px; top: 232px; left:210px; width: 315px; height:230px;">
+            <ng-content></ng-content>
+        </div>
     </div>
-<div style=" display:relative;">
-    <div style="background-image: url({{imageName}}); background-repeat: no-repeat; background-size: 310px 230px;" class="selectiongrid">
-        <ng-content style="position: absolute;" ></ng-content>
-    </div>
-    <div class="yellow" onclick="location.href='./'"></div>
 </div>
+
