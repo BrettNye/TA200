@@ -1,41 +1,32 @@
-<app-screen
-  [imageName]="'main.JPG'"
-  style="position: fixed;"
->
-  <div class="d-flex">
-      <app-item
-      [child]="'users'"
-      [parent]="''"
-      [class]="'m-item'"
-      ></app-item>
-      <app-item
-      [child]="'comm'"
-      [parent]="''"
-      [class]="'m-item'"
-      ></app-item>
-      <app-item
-      [class]="'m-item nope'"
-      ></app-item>
-      <app-item
-      [class]="'m-item nope'"
-      ></app-item>
+<app-screen [imageName]="'main.JPG'" style="position: fixed;">
+  <div style="display: grid; grid-template-columns: 1fr; grid-template-rows: 2fr;" class="w-100 h-100">
+    <div 
+      style="
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;" 
+      class="w-100 h-50">
+      <app-item class="m-item" child="users"></app-item>
+      <app-item class="m-item" child="comm"></app-item>
+      <app-item class="m-item nope"></app-item>
+      <app-item class="m-item nope"></app-item>
     </div>
-    <div class="d-flex">
-      <app-item
-      [class]="'m-item nope'"
-      ></app-item>
-      <app-item
-      [class]="'m-item nope'"
-      ></app-item>
-      <app-item
-      [class]="'m-item nope'"
-      ></app-item>
-      <app-item
-      [class]="'m-item nope'"
-      ></app-item>
+    <div style="
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;" 
+      class="w-100 h-50">
+      <app-item class="m-item nope"></app-item>
+      <app-item class="m-item nope"></app-item>
+      <app-item class="m-item nope"></app-item>
+      <app-item class="m-item nope"></app-item>
     </div>
+  </div>
 </app-screen>
 <!-- <a href="http://localhost:4200/ftwebster" target="_blank">test</a> -->
 <button (click)="ftweb()" style="position: sticky; margin-top: 25px;">test</button>
 <!-- <button routerLink="/ftwebster">test</button> -->
-
