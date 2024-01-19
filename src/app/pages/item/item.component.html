@@ -1,7 +1,7 @@
-<div class="my-auto">
+    <div [class]="class" >
     <a 
-    class="{{class}}" 
     (click)="nextPage()"
-    routerLink="{{_parent}}/{{_child}}"
+    [routerLink]="[parent, child]"
     ></a>
   </div>
+

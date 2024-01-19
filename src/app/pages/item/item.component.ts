@@ -8,22 +8,20 @@ import { Router } from '@angular/router';
 })
 export class ItemComponent implements OnInit {
   @Input()
-  parent!: string;
+  parent: string = '';
   @Input()
-  child!: string;
+  child: string = '';
   @Input()
   class!: string;
-  _parent = '';
-  _child = '';
+
   constructor(
     private _router: Router,
   ){}
   ngOnInit(): void {
-    this._parent = this.parent
-    this._child = this.child
+
     
   }
   nextPage(){
-    this._router.navigate([`${this._parent}/${this._child}`]);
+    this._router.navigate([`${this.parent}/${this.child}`]);
   }
 }
